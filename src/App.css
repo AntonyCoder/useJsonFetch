@@ -1,0 +1,27 @@
+.block-active,
+.block-loading,
+.block-error {
+    width: 150px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.block-active {
+    background-color: green;
+}
+
+.block-loading{
+    background-color: rgb(207, 131, 31);
+}
+
+.block-error{
+    background-color: red;
+}
+
+.app{
+    display: flex;
+    gap: 20px;
+}
