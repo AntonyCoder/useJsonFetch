@@ -5,7 +5,7 @@ function Active(){
     const {data} = useJsonFetch(`${url}/data`);
 
     return(
-        (data && <div className="block-active">{data.status}</div>)
+        <div className="block-active">ok</div>
     )
 }
 
