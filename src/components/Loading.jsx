@@ -5,7 +5,7 @@ function Loading() {
     const { loading } = useJsonFetch(`${url}/loading`);
 
     return (
-        <div className="block-loading">Loading...</div>
+        (loading && <div className="block-loading">Loading...</div>)
     )
 }
 

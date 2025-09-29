@@ -5,7 +5,7 @@ function Error() {
     const { error } = useJsonFetch(`${url}/error`);
 
     return (
-        <div className="block-error">{error}</div>
+        (error && <div className="block-error">{error}</div>)
     )
 }
 

@@ -1,11 +1,11 @@
 import useJsonFetch from "../useJsonFetch";
 
-function Active(){
+function Active() {
     const url = import.meta.env.VITE_API_URL;
-    const {data} = useJsonFetch(`${url}/data`);
+    const { data } = useJsonFetch(`${url}/data`);
 
-    return(
-        <div className="block-active">ok</div>
+    return (
+        (data && <div className="block-active">{data.status}</div>)
     )
 }
 
